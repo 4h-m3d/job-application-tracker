@@ -17,7 +17,8 @@ function PrivateRoute({ children }) {
 
 export default function App() {
   return (
-    <Router>
+    // Just add basename here:
+    <Router basename="/<job-application-tracker>">
       <AuthProvider>
         <JobsProvider>
           <Routes>
@@ -51,7 +52,6 @@ export default function App() {
               }
             />
 
-            {/* FIXED: path changed from /job/:id to /jobs/:id */}
             <Route
               path="/jobs/:id"
               element={
