@@ -21,6 +21,11 @@ A professional, full-featured React app to track job applications, built with Ta
 ![Dashboard Screenshot](./Dashboard%20Screenshot/screenshot.png)
 
 ---
+## Live Demo
+
+Check out the live demo of the Job Application Tracker here:  
+[https://4h-m3d.github.io/job-application-tracker/](https://4h-m3d.github.io/job-application-tracker/)
+---
 
 ## Getting Started
 
