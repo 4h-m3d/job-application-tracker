@@ -9,6 +9,13 @@ export default function Dashboard() {
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+  // Delete job by id
+  const deleteJob = (id) => {
+    if (window.confirm("Are you sure you want to delete this job?")) {
+      setJobs((prevJobs) => prevJobs.filter((job) => job.id !== id));
+    }
+  };
+
   // Export jobs as JSON file
   const handleExport = () => {
     const dataStr = JSON.stringify(jobs, null, 2);
@@ -116,12 +123,14 @@ export default function Dashboard() {
         </button>
 
         <header className="flex justify-between items-center mb-6">
-          <h1 className="text-3xl font-bold drop-shadow-lg">Job Application Tracker</h1>
+          <h1 className="text-3xl font-bold drop-shadow-lg">
+            Job Application Tracker
+          </h1>
           <p className="opacity-90 text-lg">
             Logged in as <span className="font-semibold">{user?.name || "User"}</span>
           </p>
         </header>
-        
+
         <div className="mb-6">
           <Link
             to="/add-job"
@@ -133,7 +142,9 @@ export default function Dashboard() {
 
         <section className="bg-white bg-opacity-20 rounded-lg shadow-lg p-6 text-white backdrop-blur-sm">
           {jobs.length === 0 ? (
-            <p className="text-center text-gray-200">No jobs added yet. Click "Add Job" to get started!</p>
+            <p className="text-center text-gray-200">
+              No jobs added yet. Click "Add Job" to get started!
+            </p>
           ) : (
             <table className="w-full text-left border-collapse">
               <thead>
@@ -168,6 +179,12 @@ export default function Dashboard() {
                       >
                         Edit
                       </Link>
+                      <button
+                        onClick={() => deleteJob(id)}
+                        className="bg-red-600 hover:bg-red-700 rounded px-3 py-1 text-sm font-semibold"
+                      >
+                        Delete
+                      </button>
                     </td>
                   </tr>
                 ))}

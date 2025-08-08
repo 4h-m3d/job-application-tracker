@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/job-application-tracker/static/css/main.79a644c6.css",
+    "main.js": "/job-application-tracker/static/js/main.8b597463.js",
+    "index.html": "/job-application-tracker/index.html",
+    "main.79a644c6.css.map": "/job-application-tracker/static/css/main.79a644c6.css.map",
+    "main.8b597463.js.map": "/job-application-tracker/static/js/main.8b597463.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79a644c6.css",
+    "static/js/main.8b597463.js"
+  ]
+}
