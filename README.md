@@ -64,6 +64,6 @@ MIT License
 
 ---
 
-## Author
+## Reach Out
 
-Your Name - [your.email@example.com](mailto:ahmed6963nadeem@gmail.com)
+Ahmed Nadeem - [271056436@formanite.fccollege.edu.pk](mailto:271056436@formanite.fccolege.edu.pk)
